@@ -114,7 +114,10 @@ body {
 /* герой */
 .hero-title {
   margin-top: 0;
+  margin-right: auto;
   margin-bottom: 30px;
+  margin-left: auto;
+  width: 696px;
 
   color: var(--white-text-color);
   font-weight: 900;
@@ -126,6 +129,11 @@ body {
 }
 .hero {
   background-color: grey;
+}
+
+.hero .container {
+  padding-top: 200px;
+  padding-bottom: 200px;
   text-align: center;
 }
 .hero-button {
@@ -176,8 +184,16 @@ body {
   display: flex;
   justify-content: space-between;
 }
+
 .advantages-item {
   margin: 0;
+}
+.advantages-image {
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  background-color: #f5f4fa;
+  border-radius: 4px;
 }
 
 .advantages-list:not(:last-child) {
@@ -259,21 +275,20 @@ body {
 .client {
   display: flex;
   justify-content: center;
+  align-content: center;
 }
 .client-list:not(:last-child) {
   margin-right: 30px;
 }
 .client-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 90px;
   border: 1px solid #afb1b8;
   border-radius: 4px;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  padding-right: 63px;
-  padding-left: 63px;
-  width: 170px;
 }
-/* .client-list:hover {
-  color: var(--accent-text-color); */
 
 /* футер*/
 
@@ -281,6 +296,7 @@ body {
   display: flex;
   align-items: center;
 }
+
 .footer-address {
   padding-top: 60px;
   padding-bottom: 60px;
@@ -309,6 +325,7 @@ footer {
   padding-top: 72px;
   padding-bottom: 100px;
 }
+
 .join-us {
   display: block;
   margin-bottom: 20px;
@@ -368,7 +385,7 @@ footer {
   color: var(--primary-title-color);
   background-color: #f5f4fa;
   border-radius: 4px;
-  border-color: #f5f4fa;
+  border: none;
 }
 .portfolio-button:not(:last-child) {
   margin-right: 8px;
@@ -377,8 +394,6 @@ footer {
 .portfolio-button:focus {
   background-color: var(--accent-text-color);
   color: var(--white-text-color);
-  box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.12), 0px 1px 2px rgba(0, 0, 0, 0.08),
-    0px 3px 1px rgba(0, 0, 0, 0.1);
   border-radius: 4px;
 }
 .portfolio a {
