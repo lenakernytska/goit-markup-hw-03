@@ -129,13 +129,11 @@ body {
 }
 .hero {
   background-color: grey;
-}
-
-.hero .container {
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
 }
+
 .hero-button {
   padding-top: 10px;
   padding-right: 32px;
@@ -188,11 +186,16 @@ body {
 .advantages-item {
   margin: 0;
 }
-.advantages-image {
+.advantages-image img {
   display: block;
-  margin-right: auto;
-  margin-left: auto;
+}
+.advantages-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   background-color: #f5f4fa;
+  width: 270px;
+  height: 120px;
   border-radius: 4px;
 }
 
@@ -336,6 +339,7 @@ footer {
   text-transform: uppercase;
 }
 /* портфолио */
+
 .filters {
   text-align: center;
   margin-bottom: 50px;
